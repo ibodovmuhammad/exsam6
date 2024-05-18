@@ -1,0 +1,139 @@
+### 1 Question
+Дар бораи рекурсия нависед. 
+
+рекурсия як намуди цикл мебошад ки методи кухна ва кам истифодабаранда мебошад.
+тарзи коркунии рекурсия дар он мебошад ки  як функсия сохта дар дохили он  амон
+функсияро  файрод карда цикл ба миён меояд .
+рекурсияро аз хисоби он ки хам коркуниаш ва хам хачми мегирифтааш калон ва суст аст кам истифода мебаранд.
+
+
+### 2 Question
+Closure(Замыкания) - ро бо мисолҳо фаҳмонед.
+
+
+
+
+
+### 3 Question
+Контейнерҳоро ба хотир оварда онҳоро нависед. 
+ба контейнерхо дохил мешавад  лист тупл дикшнри ва гайра 
+аз чи хисоб онхоро контейнер мегуянд ки онхо дар дохили худ якчанд типи маълумотро ва бо микдори зиёд кабул мекунанд
+
+
+### 4 Question
+Дар бораи lambda expression ва list comprehension нависед.
+
+лямда як  намуди функсия сози мебошад ки оди карда мини функсия мебошад 
+ва онро барои кодхои кутох ба функсия табдил додан лозим бошад бо лямда  истифода мебаранд
+
+
+### 5 Question
+Кадом методҳои модули datetime ва randome - ро медонед. Бо мисолҳо фаҳмонед.
+
+методи дейт тайм барои бо вакту соат кор кардан мебошад ки мо метавонем вакти хозира ва вактор хисоб китоб кунем 
+мисол мо метавонем аз вакти додашуда 2 руз ро  бо воситаи  делта  чам ё тарх кунем 
+
+### 2 Task
+Write a Python program to convert a list of multiple integers into a single integer.
+Напишите программу на Python для преобразования списка из нескольких целых чисел в одно целое число.
+# input
+    Sample list: [11, 33, 50]
+# output
+    Expected Output: 113350
+
+
+
+
+    list1=input().split()
+i=0
+res=""
+while i<len(list1):
+    res+=list1[i]
+    i+=1
+
+print(res)
+
+
+
+
+
+### 3 Task
+Create a python program to read line number N from the following file.
+Создайте программу Python для чтения строки номер N из следующего файла.
+my_file.txt -> Hello world
+               TEST
+               Tajikistan
+               An apple
+# input
+    3
+# otput
+    Tajikistan
+
+
+    b=int(input())
+with open("text2.txt", "r") as fail:
+    a=fail.readlines()
+print(a[b])
+
+
+### 4 Task
+Create a python program to generate a random password of the specified length.
+Создайте программу Python для создания случайного пароля указанной длины.
+# input
+    Enter the desired password length: 12
+# output
+    Generated password: Xy#7pLm$9oR5
+
+
+import random
+a=int(input())
+b="kgyiftree4zwtrfg;k'ucr5x4wer yfghklmijouicrexst58706528+%^&%&(##$@)"
+c=0
+i=0
+while i <a:
+    i+=1
+    c=random.randint(0,len(b))
+    print(b[c],end="")
+
+
+
+
+### 7 Task
+Write a Python program for binary search of an ordered list.
+Напишите программу на Python для двоичного поиска в упорядоченном списке.
+# Example
+    Ordered_binary_Search([0, 1, 3, 8, 14, 18, 19, 34, 52], 3) -> True
+    Ordered_binary_Search([0, 1, 3, 8, 14, 18, 19, 34, 52], 17) -> False
+
+a=int(input())
+list1=[0, 1, 3, 8, 14, 18, 19, 34, 52]
+s=0
+for i in list1:
+    if i==a:
+        s+=1
+
+if s>0:
+    print("YES")
+else:
+    print("NO")
+    
+
+
+    ### 8 Task
+Write a Python program to replace each character of a word of length five and more with a hash character (#).
+Напишите программу на Python, заменяющую каждый символ слова длиной пять и более символом решетки (#).
+# input
+    Count the lowercase letters in the said list of words:
+# output
+    ##### the ######### ####### in the said list of ######
+
+a=input().split()
+for i in a:
+    if len(i)>5:
+        for j in range(len(i)):
+            print("#", end="")
+
+    else:
+        print(" ",i,end=" ")
+
+
